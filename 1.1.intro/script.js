@@ -13,7 +13,7 @@ function random_bg_color() {
     }
 
 random_bg_color();
-
+//Display the children of body
 for(let child of document.body.children){
     console.log(child)
 }
