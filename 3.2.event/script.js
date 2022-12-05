@@ -21,10 +21,18 @@ const clickOnSquare = (e) => {
   ul[0].appendChild(li);
 
   li.innerText=getElapsedTime() + " " + "Created a new" + " " + e.target.classList[1] + " " + "square";
-
+   
   //Alert color
-  window.alert(e.target.classList[1]);
+    const displayedsquare = document.querySelectorAll('.displayedsquare')
+    for (let Square of displayedsquare) {
+        Square.addEventListener('click', alertes)
+    }
+    
 }
+
+function alertes (e){
+        alert(e.target.classList[1])
+    }
 
 const actionSquares = document.querySelectorAll('.actionsquare')
 for (let actionSquare of actionSquares) {
