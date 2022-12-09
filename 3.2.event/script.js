@@ -60,7 +60,7 @@ document.body.onkeyup = function(e) {
         let li=document.createElement('li');
         ul[0].appendChild(li);
 
-        li.innerText="Space bar is press, the background is now: "+ random_bg_color();
+        li.innerText=getElapsedTime() + "Space bar is press, the background is now: "+ random_bg_color();
         }
 
     //remove the last li
